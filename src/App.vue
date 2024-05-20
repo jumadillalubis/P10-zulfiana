@@ -45,6 +45,19 @@
 
 <script>
 export default {
+  props: {
+    props: {
+  propA: String,
+  propB: {
+    type: Number,
+    default: 100
+  },
+  propC: {
+    type: Boolean,
+    required: true
+  }
+}
+  },
   data() {
     return {
       todos: [],
@@ -150,5 +163,3 @@ button {
   cursor: pointer;
 }
 </style>
-
-
